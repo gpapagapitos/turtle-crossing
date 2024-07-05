@@ -29,5 +29,4 @@ class Player(Turtle):
         """Method to detect when the player is at the finish line"""
         if self.ycor() > FINISH_LINE_Y:
             return True
-        else:
-            return False
+        return False
