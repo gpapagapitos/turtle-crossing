@@ -1,3 +1,5 @@
+"""Turtle crossing game"""
+# pylint: disable=C0103
 import time
 from turtle import Screen
 from player import Player
