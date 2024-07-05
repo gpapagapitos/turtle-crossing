@@ -23,3 +23,11 @@ while game_is_on:
 
     car_manager.create_car()
     car_manager.move_cars()
+
+    # Detect collision
+    for car in car_manager.all_cars:
+        if car.distance(player) < 20:
+            game_is_on = False
+
+
+screen.exitonclick()
